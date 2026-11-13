@@ -83,6 +83,7 @@
       margin-right: 10px; 
       font-size: 1rem; 
     }
+    
     .review-year-select { 
       padding: 8px 16px; 
       border: 1px solid #0077b6; 
@@ -140,6 +141,7 @@
       object-fit: cover;
     }
     .review-note { text-align: center; color: #888888; font-size: 0.8rem; margin-top: 25px; }
+    
 
     /* Modal Popup for Spot Photo & Student Comment */
     .modal {
@@ -288,7 +290,7 @@
         <!-- 2024 Default Items -->
         <article class="review-card" onclick="openModal('images/2024 students/vihara.webp', 'ビハラさんの感想 (クルーズから見る富士山)', 'クルーズから見る富士山がとてもきれいで、忘れられない思い出になりました。')">
           <div class="review-card-body">
-            <span class="review-student-name">💬 ビハラさん</span>
+            <span class="review-student-name">💬 ビハラ</span>
             <span class="review-topic-title">クルーズから見る富士山</span>
           </div>
           <img src="images/2024 students/vihara.webp" alt="富士山とクルーズ" class="review-card-img">
@@ -296,7 +298,7 @@
 
         <article class="review-card" onclick="openModal('images/2024 students/afuka.webp', 'アフカさんの感想 (おいしいランチ)', '友達と一緒においしいランチを食べたり、写真を撮ったりできて楽しかったです。')">
           <div class="review-card-body">
-            <span class="review-student-name">💬 アフカさん</span>
+            <span class="review-student-name">💬 アフカ</span>
             <span class="review-topic-title">おいしいランチと写真撮影</span>
           </div>
           <img src="images/2024 students/afuka.webp" alt="ランチ" class="review-card-img">
@@ -304,7 +306,7 @@
 
         <article class="review-card" onclick="openModal('images/2024 students/karki.webp', 'カルキさんの感想 (歴史や文化の見学)', '三保の松原と久能山東照宮を見学して、日本の歴史や文化を学ぶことができました。')">
           <div class="review-card-body">
-            <span class="review-student-name">💬 カルキさん</span>
+            <span class="review-student-name">💬 カルキ</span>
             <span class="review-topic-title">三保の松原と久能山東照宮の見学</span>
           </div>
           <img src="images/2024 students/karki.webp" alt="三保の松原" class="review-card-img">
@@ -312,7 +314,7 @@
 
         <article class="review-card" onclick="openModal('images/2024 students/sharma.webp', 'サルマさんの感想 (バスの中の雰囲気)', 'バスの中の雰囲気も良く、クラスメイトみんなと仲良くなれる最高の行事でした。')">
           <div class="review-card-body">
-            <span class="review-student-name">💬 サルマさん</span>
+            <span class="review-student-name">💬 サルマ</span>
             <span class="review-topic-title">バスの中の雰囲気とクラスメイト</span>
           </div>
           <img src="images/2024 students/sharma.webp" alt="久能山東照宮" class="review-card-img">
@@ -342,22 +344,22 @@
   <script>
     const reviewData = {
       "2024": [
-        { photo: "images/2024 students/vihara.webp", title: "クルーズから見る富士山", name: "ビハラさん", comment: "クルーズから見る富士山がとてもきれいで、忘れられない思い出になりました。" },
-        { photo: "images/2024 students/afuka.webp", title: "おいしいランチと写真撮影", name: "アフカさん", comment: "友達と一緒においしいランチを食べたり、写真を撮ったりできて楽しかったです。" },
-        { photo: "images/2024 students/karki.webp", title: "三保の松原と久能山東照宮の見学", name: "カルキさん", comment: "三保の松原と久能山東照宮を見学して、日本の歴史や文化を学ぶことができました。" },
-        { photo: "images/2024 students/sharma.webp", title: "バスの中の雰囲気とクラスメイト", name: "サルマさん", comment: "バスの中の雰囲気も良く、クラスメイトみんなと仲良くなれる最高の行事でした。" }
+        { photo: "images/2024 students/vihara.webp", title: "クルーズから見る富士山", name: "ビハラ", comment: "クルーズから見る富士山がとてもきれいで、忘れられない思い出になりました。" },
+        { photo: "images/2024 students/afuka.webp", title: "おいしいランチと写真撮影", name: "アフカ", comment: "友達と一緒においしいランチを食べたり、写真を撮ったりできて楽しかったです。" },
+        { photo: "images/2024 students/karki.webp", title: "三保の松原と久能山東照宮の見学", name: "カルキ", comment: "三保の松原と久能山東照宮を見学して、日本の歴史や文化を学ぶことができました。" },
+        { photo: "images/2024 students/sharma.webp", title: "バスの中の雰囲気とクラスメイト", name: "サルマ", comment: "バスの中の雰囲気も良く、クラスメイトみんなと仲良くなれる最高の行事でした。" }
       ],
       "2025": [
-        { photo: "images/2025 students/ayau.webp", title: "船の上からの景色", name: "アユさん", comment: "船の上から見る景色が最高でした。海風も気持ちよく、また参加したいです。" },
-        { photo: "images/2025 students/khadka.webp", title: "友達との思い出", name: "カドカさん", comment: "普段なかなか行けない場所を友達と一緒に回れて、とても充実した一日でした。" },
-        { photo: "images/2025 students/karishma.webp", title: "久能山東照宮の建物", name: "カリスマさん", comment: "久能山東照宮の建物が美しく、日本の歴史に興味を持つきっかけになりました。" },
-        { photo: "images/2025 students/sapana.webp", title: "写真スポットでの思い出", name: "サパナさん", comment: "写真スポットがたくさんあって、思い出に残るすばらしい一日になりました。" }
+        { photo: "images/2025 students/ayau.webp", title: "船の上からの景色", name: "アユ", comment: "船の上から見る景色が最高でした。海風も気持ちよく、また参加したいです。" },
+        { photo: "images/2025 students/khadka.webp", title: "友達との思い出", name: "カドカ", comment: "普段なかなか行けない場所を友達と一緒に回れて、とても充実した一日でした。" },
+        { photo: "images/2025 students/karishma.webp", title: "久能山東照宮の建物", name: "カリスマ", comment: "久能山東照宮の建物が美しく、日本の歴史に興味を持つきっかけになりました。" },
+        { photo: "images/2025 students/sapana.webp", title: "写真スポットでの思い出", name: "サパナ", comment: "写真スポットがたくさんあって、思い出に残るすばらしい一日になりました。" }
       ],
       "2026": [
-        { photo: "images/2026 students/kumari.webp", title: "駿河湾クルーズと富士山", name: "クマリさん", comment: "駿河湾クルーズで富士山を見ることができて感動しました。写真もたくさん撮れました。" },
-        { photo: "images/2026 students/sangita.webp", title: "ランチタイムの会話", name: "サンギタさん", comment: "はとばキッチンのランチがおいしく、友達との会話も弾んで楽しかったです。" },
-        { photo: "images/2026 students/gc.webp", title: "研修旅行の感想", name: "ジシさん", comment: "美しい景色と歴史ある場所の両方を楽しめて、思い出に残る研修旅行になりました。" },
-        { photo: "images/2026 students/dan.webp", title: "最高の景色と思い出", name: "ダンさん", comment: "天気に恵まれて最高の景色でした！友達と最高の思い出が作れて大満足です。" }
+        { photo: "images/2026 students/kumari.webp", title: "駿河湾クルーズと富士山", name: "クマリ", comment: "駿河湾クルーズで富士山を見ることができて感動しました。写真もたくさん撮れました。" },
+        { photo: "images/2026 students/sangita.webp", title: "ランチタイムの会話", name: "サンギタ", comment: "はとばキッチンのランチがおいしく、友達との会話も弾んで楽しかったです。" },
+        { photo: "images/2026 students/gc.webp", title: "研修旅行の感想", name: "ジシ", comment: "美しい景色と歴史ある場所の両方を楽しめて、思い出に残る研修旅行になりました。" },
+        { photo: "images/2026 students/dan.webp", title: "最高の景色と思い出", name: "ダン", comment: "天気に恵まれて最高の景色でした！友達と最高の思い出が作れて大満足です。" }
       ]
     };
 
